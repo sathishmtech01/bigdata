@@ -4,7 +4,7 @@ import org.apache.spark.sql.functions._
 
 object merging {
 def main(arg: Array[String]) {
-val sparkConf = new SparkConf().setAppName("aggregating")
+val sparkConf = new SparkConf().setAppName("merging")
 val sc = new SparkContext(sparkConf)
 val sqlContext = new SQLContext(sc)
 val input=arg(0)
